@@ -1,71 +1,54 @@
-# importrust README
+# Rust Importer
 
-This is the README for your extension "importrust". After writing up a brief description, we recommend including the following sections.
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/importrust.rust-importer)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/your-publisher-name.rust-importer)
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/your-publisher-name.rust-importer)
+
+## Overview
+
+Rust Importer is a VS Code extension that helps you automatically import all Rust packages and folder classes into your current Rust file. This tool simplifies managing imports in your Rust projects, making your development process more efficient.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Automatically scan and import all Rust packages and folder classes.
+- Works recursively to find all `.rs` files in the current directory.
+- Adds `use crate::...` statements for each found module.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open the Extensions view in VS Code by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+2. Search for "Rust Importer" and click **Install**.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open a Rust file in your project.
+2. Open the Command Palette by pressing `Ctrl+Shift+P`.
+3. Type `Import Rust Packages` and select the command.
+4. The extension will scan your project and add the necessary `use` statements at the top of the current file.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension does not have any configurable settings yet.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- The extension may not handle complex module structures perfectly. Contributions and bug reports are welcome!
+
+## Contributing
+
+If you find any issues or have suggestions for new features, please open an issue or submit a pull request in the [GitHub repository](https://github.com/-xbrymo/rust-importer).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- Initial release of Rust Importer.
 
 ---
 
-## Following extension guidelines
+**Enjoy using Rust Importer? [Rate us on the VS Code Marketplace!](https://marketplace.visualstudio.com/items?itemName=your-publisher-name.rust-importer)**
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
