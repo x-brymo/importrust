@@ -3,7 +3,7 @@
   "displayName": "importRust",
   "description": "Extension to help you import all files and packages",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "import Rust",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -52,6 +52,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/x-brymo/rust-importer"
+    "url": "https://github.com/x-brymo/importrust"
   }
 }
